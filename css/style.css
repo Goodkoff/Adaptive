@@ -1,0 +1,91 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container .col {
+    width: 100%;
+    margin: 5px auto;
+    float: left;
+}
+.back {
+    margin: auto 2%;
+}
+
+.container .red{
+    background-color: indianred;
+    border: 1px solid red;
+}
+.container .yellow{
+    background-color: lightgoldenrodyellow;
+    border: 1px solid yellow;
+}
+.container .green{
+    background-color: darkseagreen;
+    border: 1px solid darkslategrey;
+}
+
+.container .blue{
+    background-color: lightblue;
+    border: 1px solid dodgerblue;
+}
+
+.container .grey{
+    background-color: gainsboro;
+    border: 1px solid grey;
+}
+
+@media  all and (min-width: 320px){
+    .container .col {
+        display: block;
+        font-size: 1.5rem;
+    }
+    .container .yellow{
+        width: 29%;
+        margin-right: 2%;
+
+    }
+    .container .green{
+        width: 69%;
+    }
+    }
+
+@media  all and (min-width: 600px){
+    .container .col {
+        display: block;
+        font-size: 2rem;
+    }
+    .container .yellow{
+        width: 19%;
+        margin-right: 2%;
+
+    }
+    .container .green{
+        width: 58%;
+        margin-right: 2%;
+    }
+    .container .blue {
+        width: 19%;
+    }
+
+}
